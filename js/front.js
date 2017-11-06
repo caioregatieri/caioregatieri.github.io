@@ -421,8 +421,8 @@ function contactForm() {
 	    data: $(this).serialize(), // serializes the form's elements.
 	    success: function (data)
 	    {
-			var messageAlert = 'alert-' + data.type;
-			var messageText = data.message;
+			var messageAlert = 'alert-success';
+			var messageText = 'Mensagem enviada com sucesso.';
 			var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 			if (messageAlert && messageText) {
 				$('#contact-form').find('.messages').html(alertBox);
