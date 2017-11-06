@@ -423,7 +423,8 @@ function contactForm() {
 				var messageText = 'Mensagem enviada com sucesso.';
 				var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 				if (messageAlert && messageText) {
-					$('#contact-form input').val("");
+					$('#contact-form input[type=text]').val("");
+					$('#contact-form textarea').val("");
 					$('#contact-form').find('.messages').html(alertBox);
 				}
 			}
