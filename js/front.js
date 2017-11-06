@@ -10,10 +10,10 @@ $(function () {
     utils();
     sliding();
     contactForm();
-    map();
-    counters();
+    //map();
+    //counters();
     parallax();
-    demo();
+    //demo();
 });
 
 $(window).load(function () {
@@ -413,7 +413,7 @@ function waypointsRefresh() {
 function contactForm() {
     $("#contact-form").submit(function () {
 
-	var url = "contact.php"; // the script where you handle the form input.
+	var url = "#"; // the script where you handle the form input.
 
 	$.ajax({
 	    type: "POST",
