@@ -3,3 +3,7 @@
 .customer{
     background-color: white;
 }
+
+.customer, .img-responsive{
+    border-radius: 5px;
+}
